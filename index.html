@@ -7,6 +7,8 @@
     <title>Whiskey Drop | Taste a new whiskey every month</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css" type="text/css" />
 </head>
 
 <body>
@@ -43,31 +45,37 @@
         </div>
         <!--</div>-->
     </nav>
-    <article class="container mt-3">
+    <!-- <div class="container alert-container">
         <div class="row d-none d-sm-block">
             <div class="col-12">
                 <div class="alert alert-warning">
                     <strong>Sale Now On!</strong> We've got a sale on. Get a 12 month subscription for the price of 6! <a href="">See here for more details</a>
                 </div>
             </div>
-        </div>
+        </div> -->
         <!-- Callout -->
+    <div class="container-fluid callout-container">
+        <div class="opaque-overlay">&nbsp;</div>
         <div class="row">
             <div class="col-12">
                 <section class="callout jumbotron text-center">
-                    <h1>The finest whiskeys delivered to your doorstep.</h1>
+                    <h1 class="jumbotron-header">The finest whiskeys delivered to your doorstep.</h1>
+                    <hr class="block-divider block-divider--orange">
                     <p class="lead">Sign up today to start receiving the world's best whiskeys every month.
                         <s class="d-none d-sm-inline">€19.99</s>
                         <span class="d-inline d-sm-none"><br></span>
                         <strong><mark>First one is free!</mark></strong></p>
-                    <p><button class="btn btn-lg btn-success" data-toggle="modal" data-target="#signUpModal">Sign Up!</button></p>
+                    <button class="btn btn-lg btn--cta btn--red" data-toggle="modal" data-target="#signUpModal">Sign Up!</button>
                     <p class="text-muted"><small>You must be over 18 to sign up to our service. Please drink responsibly.</small></p>
                 </section>
             </div>
         </div>
         <!-- /.callout -->
-        <hr>
+        </div>
+    </div>
+
     <!-- Quotes -->
+    <div class="container quotes-container">
     <section class="quotes">
     <div class="row">
         <div class="col-12 my-5">
@@ -89,7 +97,7 @@
                 </div>
             </div>
         </div>
-
+    
         <div class="col-12">
             <div class="media">
                 <div class="d-none d-sm-block">
@@ -106,8 +114,9 @@
     </div>        
     </section>
     <!-- / .quotes -->
- <hr>
+ </div>
         <!-- Features -->
+        <div class="container features-container">
         <section class="features">
             <div class="row">
                 <div class="col-12 my-5">
@@ -140,7 +149,7 @@
             </div>
         </section>
         <!-- /.features -->
-    </article>
+    </div>
     
     <div class="modal" tabindex="-1" role="dialog" id="signUpModal">
         <div class="modal-dialog" role="document">
